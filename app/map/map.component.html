@@ -1,0 +1,14 @@
+<div>
+    <sebm-google-map [latitude]="lat" [longitude]="lng">
+  <sebm-google-map-marker [latitude]="lat" [longitude]="lng">
+  </sebm-google-map-marker>
+  <sebm-google-map-marker *ngFor="let m of markers; let i=index " [latitude]="m.lat" 
+  [longitude]="m.lng" 
+  [title]="m.title"
+  [label]="m.label"
+   >
+  
+  </sebm-google-map-marker>
+</sebm-google-map>
+<button style="margin-top:20px" (click) ='addRandomGpsPoint()' >Add random point </button>
+</div>
