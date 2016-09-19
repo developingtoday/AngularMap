@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('angular2-google-maps/core');
 var geolocation_service_1 = require('../shared/geolocation.service');
 var MapComponent = (function () {
     function MapComponent(service) {
@@ -45,7 +44,6 @@ var MapComponent = (function () {
             selector: 'map',
             styleUrls: ['app/map/map.component.css'],
             templateUrl: 'app/map/map.component.html',
-            directives: [core_2.GOOGLE_MAPS_DIRECTIVES],
             providers: [geolocation_service_1.GeolocationService]
         }), 
         __metadata('design:paramtypes', [geolocation_service_1.GeolocationService])

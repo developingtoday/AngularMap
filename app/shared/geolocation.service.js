@@ -65,7 +65,7 @@ var GeolocationService = (function () {
     return GeolocationService;
 }());
 exports.GeolocationService = GeolocationService;
-exports.geolocationServiceInjectables = [
-    core_1.provide(GeolocationService, { useClass: GeolocationService })
-];
+// export var geolocationServiceInjectables: Array<any> = [
+//   provide(GeolocationService, { useClass: GeolocationService })
+// ]; 
 //# sourceMappingURL=geolocation.service.js.map

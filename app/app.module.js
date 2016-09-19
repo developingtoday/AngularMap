@@ -9,18 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
+var app_component_1 = require('./app.component');
+var geolocation_service_1 = require('./shared/geolocation.service');
+var map_component_1 = require('./map/map.component');
+var core_2 = require('angular2-google-maps/core');
+var AppModule = (function () {
+    function AppModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'ang-map',
-            template: '<h2>Angular Google Map </h2>' +
-                '<map></map>',
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, core_2.AgmCoreModule.forRoot()],
+            providers: [geolocation_service_1.GeolocationService],
+            declarations: [app_component_1.AppComponent, map_component_1.MapComponent],
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AppModule);
+    return AppModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

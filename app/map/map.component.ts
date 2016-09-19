@@ -1,11 +1,11 @@
 import {Component,OnInit} from '@angular/core';
-import {GOOGLE_MAPS_DIRECTIVES} from 'angular2-google-maps/core';
+
 import {GeolocationService} from '../shared/geolocation.service';
 @Component({
     selector:'map',
 styleUrls:['app/map/map.component.css'],
 templateUrl:'app/map/map.component.html',
-directives:[GOOGLE_MAPS_DIRECTIVES],
+
 providers:[GeolocationService]
     
 })

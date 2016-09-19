@@ -5,7 +5,7 @@ import {MapComponent} from './map/map.component';
     selector:'ang-map',
     template:'<h2>Angular Google Map </h2>'+
     '<map></map>',
-    directives:[MapComponent]
+    // directives:[MapComponent]
 })
 export /**
  * AppComponent

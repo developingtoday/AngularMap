@@ -1,5 +1,5 @@
 // link https://gist.github.com/sasha7/0c32f3686eb49d44ccc8
-import {Injectable, provide} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
 const GEOLOCATION_ERRORS = {
@@ -61,6 +61,6 @@ export class GeolocationService {
 	}
 }
 
-export var geolocationServiceInjectables: Array<any> = [
-  provide(GeolocationService, { useClass: GeolocationService })
-];
+// export var geolocationServiceInjectables: Array<any> = [
+//   provide(GeolocationService, { useClass: GeolocationService })
+// ];
